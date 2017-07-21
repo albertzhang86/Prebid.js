@@ -61,6 +61,7 @@ function PubmaticAdapter() {
       'window.kaddctr = "%%PM_ADDCTR%%";' +
       'window.kadgender = "%%PM_GENDER%%";' +
       'window.kadage = "%%PM_AGE%%";' +
+      'window.kadpageurl  = window.document.referrer;' +
       'window.pm_async_callback_fn = "window.parent.$$PREBID_GLOBAL$$.handlePubmaticCallback";';
 
     content += '</scr' + 'ipt>';
