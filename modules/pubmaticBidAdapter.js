@@ -19,7 +19,7 @@ function PubmaticAdapter() {
   let iframe;
 
   function _callBids(params) {
-    bids = params.bids;
+    bids = params.bids || [];
     _pm_optimize_adslots = [];
     for (var i = 0; i < bids.length; i++) {
       var bid = bids[i];
